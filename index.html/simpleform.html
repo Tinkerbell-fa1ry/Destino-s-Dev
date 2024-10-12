@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <h2>Sign Up Form</h2>
+    <Form action="https://lms.ucs-iboe.org/course/view.php?id=17" method="post">
+        <label>First Name:</label>
+        <br>
+        <input type="text" name="first_name" size="20">
+        <br>
+        <lable>Last Name:</lable>
+        <br>
+        <input type="text" name="Last_name" size="20">
+        <br>
+        <lable>Email:</lable>
+        <br>
+        <input type="email" name="email" size="20">
+        <br>
+        <lable>Password:</lable>
+        <br>
+        <input type="password" name="password" size="20">
+        <br>
+        <label>Group:</label>
+        <br>
+        <input type="number" name="Group" size="20">
+        <br>
+        <label>FB Profile:</label>
+        <br>
+        <input type="url" name="fb profile" size="20">
+        <br>
+        <label>Birthday</label>
+        <br>
+        <input type="date" name="dob" value="2000-01-01">
+        <hr>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+        <br>
+        <input type="checkbox" name="agree">I agree.
+        <Hr>
+        <label>Description</label>
+        <textarea name="Description">
+            Enter comment.....
+        </textarea>
+        <br>
+        <input type="file" name="choosefile" accept="image/*"/>
+        <hr>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="Cancel">
+    </Form>
+</body>
+</html>

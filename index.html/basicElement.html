@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+    <style>
+        header{
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+            width: 100%;
+            background-size: cover;
+            height:25vw;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            margin-bottom: 3vw;
+            color: ghostwhite;   
+        }
+        header img{
+            width: 100px;
+            height: 100px;
+            border:2px solid rgb(55, 7, 82);
+            border-radius: 50%;
+        }
+        .fab{
+            width: 50px;
+            height: 50px;
+            border-image: auto black ;
+        }
+        section{
+            width: 100%;
+            float: left;
+            display: block;
+            height: auto;
+            padding: 1vw 1vw;
+            background-color: rgb(213, 228, 230);
+        }
+        section .sectionImg{
+            text-align: center;
+            padding-top:1vw;
+            padding-bottom: 1vw;
+        }
+        section p{
+            text-indent: 30px;
+            line-height: 2;
+            display: block;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        aside{
+            width: 100%;
+            float: left;
+            display: block;
+            height: auto;
+            padding: 1vw 1vw;
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+            margin-top: 2vw;
+        }
+        aside img{
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 90%;
+            height: 500px;
+            display: block;
+        }
+        footer{
+        
+            width: 100%;
+            background-size: cover;
+            height:25vw;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            margin-bottom: 3vw;
+            color: ghostwhite;  
+            float: left;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiaryp-3 mb-2 bg-info-subtle text-info-emphasis">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html/layout(project).html">HOME</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">HTML</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/index.html/basicElement.html">Basic Elements</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced</a></li>
+                        <li><a class="dropdown-item" href="#">Google API</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Author
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Author 1</a></li>
+                      <li><a class="dropdown-item" href="#">Author 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <img src="/images/layoutlogo.jpg" alt="logo"/>
+        <h1>Website Application Development</h1>
+        <p>Roadmap to develop a website</p>
+        <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+        <a href="https://www.youtube.com" class="fab fa-youtube"></a>
+        <a href="https://www.google.com" class="fab fa-google"></a>
+        
+    </header>
+    <section>
+        <h1>HTML:Hypertext Markup Language</h1>
+        <p>
+            <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn>
+            is a computer language used to structure web-based content.
+        </p>
+        <p>HTML <dfn>tags</dfn> mark the beginning and end of HTML elements.</p>
+        <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. Wikipedia HTML is not a programming language. As its name indicates (Hypertext Markup Language), it's a markup language used for creating and structuring content on the web.</p>
+
+        <div class="sectionImg">
+            <img src="/images/htmlcssjs.png" alt="Roadmap" style="width: 40%;">
+            <figcaption><b>Web Development Roadmap</b></figcaption>
+        </div>
+        <h1>VS Code Installation</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam pariatur consequuntur animi illum sed! Praesentium magnam autem architecto eaque animi sapiente ullam non. Maxime omnis illum unde possimus quidem deleniti.</p>
+        <iframe width="1200" height="600" src="https://www.youtube.com/embed/ToZ9kR8IYTk" title="Visual Studio Code Installation (Open Live Server Extension)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen" style="padding-left: 100px;padding-right: 100px;"></iframe>" ></iframe>
+        </div>
+            <div class="card-body">
+            <a href="https://www.youtube.com/embed/ToZ9kR8IYTk" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </section>
+    <aside>
+        <div class="card">
+            <div class="card-header">
+              Paragraph
+            </div>
+            <div class="card-body">
+              <p class="card-text">The p tag are used for the beginning and end of paragraph tags. When the paragraph tag is added then it automatically puts a blank space before the starting of the text. The main attribute associated with the paragraph is the align attribute.</p>
+              <img src="/images/paragrah.png" alt="paragrah">
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Pre Tag
+            </div>
+            <div class="card-body">
+              <p class="card-text">The p tag are used for the beginning and end of paragraph tags. When the paragraph tag is added then it automatically puts a blank space before the starting of the text. The main attribute associated with the paragraph is the align attribute.</p>
+              <img src="/images/pretag.png" alt="paragrah">
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </aside>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240704.64251603186!2d126.83768475777046!3d37.56401905531569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2smm!4v1725724363260!5m2!1sen!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>

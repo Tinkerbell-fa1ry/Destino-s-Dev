@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-Show</title>
+    
+    <style>
+        .header-slideshow {
+            background-color: antiquewhite;
+            position:fixed;
+            width: 100%;
+            height: 400px; /* adjust the height to your liking */
+            overflow: hidden;
+            float: left;
+            padding-right: 0px;
+            padding-left:670px;
+            padding-top: 50px;
+        }
+
+        .header-slideshow > div {
+            display: inline-block;
+            width: 15%;
+            height: 100%;
+            vertical-align:0;
+        }
+
+        .header-slideshow > div ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .header-slideshow > div li {
+            display: none; /* hide all list items initially */
+            height: 100%;  
+        }
+
+        .header-slideshow > div li.active {
+            display: block; /* show the active list item */
+        }
+
+        .header-slideshow > div li img {
+            width: 100%;
+            margin: 0;
+            border-radius: 30px;
+            object-fit:cover; 
+        }
+        .header-slideshow1 > div li img{
+            height: 33%;
+        }
+        .header-slideshow2 > div li img{
+            height: 50%;
+        }
+        .header-slideshow3 > div li img{
+            height: 100%;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-slideshow">
+            <div class="header-slideshow1">
+                <ul>
+                    <li><img src="/images/hotairballon.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/hotairballon1.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/hotairballon3.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/hotairballon4.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/hotairballon5.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/hotairballon6.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                </ul>
+            </div>
+            <div class="header-slideshow2">
+                <ul>
+                    <li><img src="/images/tg1.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/tg2.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/tg4.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/tg5.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/tg6.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/tg7.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                </ul>
+            </div>
+            <div class="header-slideshow3">
+                <ul>
+                    <li><img src="/images/thadingyut1.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/thadingyut2.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/thadingyut3.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/thadingyut4.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/thadingyut5.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/thadingyut6.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script>
+        const slideshows = document.querySelectorAll('.header-slideshow > div ul');
+        const slides = Array.from(slideshows).map(slideshow => slideshow.children);
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides.forEach((slide, index) => {
+                Array.from(slide).forEach((img, imgIndex) => {
+                    img.classList.remove('active');
+                });
+                slide[currentSlide].classList.add('active');
+            });
+            currentSlide = (currentSlide + 1) % slides[0].length;
+            setTimeout(nextSlide, 2000);
+        }
+
+        // Add the active class to the first slide initially for all slideshows
+        slides.forEach(slide => slide[0].classList.add('active'));
+        nextSlide();
+    </script>
+</body>
+</html>

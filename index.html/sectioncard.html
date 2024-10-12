@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <style>
+        .section-card{
+            background-color: orange;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h4{
+            color:navy;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a.cta-btn{
+            background-color:#7e0b0b ;
+        }
+
+
+        .card{
+            margin:50px auto ;
+            width: 356px;
+            background-color: whitesmoke;
+            box-shadow: 0px 3px 6px rgba(black,0.16);
+            text-align: center;
+            border-radius: 10px;
+            float: left;
+            display: block;
+           
+
+            .card-img{
+                position: relative;
+                img{
+                    max-width: 100%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                }
+                .card-tags{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                    
+                    li{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color:navy;
+                        background-color: rgb(229, 122, 7);
+                        font-weight: bold;
+                        padding: 5px 15px;
+                        border-radius: 30px;
+                        margin-right: 12px;
+                    }
+                }
+            }
+                .card-info{
+                    padding: 33px 30px 30px 30px;
+                    .card-title{
+                        color:navy;
+                        font-size: 24px;
+                        line-height: 34px;
+                        font-weight: bold;
+                    }
+                    p{
+                        color:rgb(229, 122, 7);
+                        font-size:16px ;
+                        line-height: 28px;
+                        font-weight: 400;
+                        margin:18px 0 24px 0;
+                    }
+                    .card-btn{
+                        color:navy;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: bold;
+                        background-color: rgb(229, 122, 7);
+                        padding: 14px 42px;
+                        border-radius: 60px;
+                        display: inline-block;
+                    }
+                }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+
+
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+
+
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+
+
+        <div class="card" style="margin-right: 50px;">
+
+            <div class="card-img">
+                <img src="/images/Talabaw_(cropped).jpg" alt="Card-Image">
+                <ul class="card-tags">
+                    <li>Kayin State</li>
+                    <li>Food</li>
+                </ul>
+            </div>
+            <div class="card-info">
+                <h4 class="card-title">Talabaw Soup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et explicabo molestiae non doloribus commodi. Cupiditate, atque labore consectetur quo molestiae quasi.</p>
+                
+                <a href="" class="card-btn">Read more</a>
+            </div>
+    
+        </div>
+
+        
+
+
+
+
+
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet"> <!-- Material Symbols Outlined -->
+<!--Iconlink-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  
+<!--fontlink-->
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+  <!--pinenav-->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet"
+/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sevillana&display=swap" rel="stylesheet">
+  <link
+    rel="icon"
+    href="/images/pjlogo.jpg"
+    type="image.jpg"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+  
+  <style>
+    /*Section Start*/
+    section{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+      font-family: "Roboto Slab", serif;
+      text-decoration: none;
+    }
+    .team{
+      position: relative;
+      width: 100%;
+      height: 250vh;
+      background: radial-gradient(#c89e44,#04744f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .team-content{
+      width:100% ;
+      max-width: 1350px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+      align-items: center;
+      gap:2rem;
+      text-align:center ;
+      margin-top: 4rem;
+    }
+
+    .team-content img{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .center h1{
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+    }
+    .box{
+      padding: 16px;
+      background: #eeecf0;
+      border-radius:15px;
+      transition: all .38s ease;
+    }
+
+    .box h3{
+      font-size: 23px;
+      font-weight: 600;
+      color: #ed0a96;
+      margin-bottom: 8px;
+    }
+   /*.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    color:#ed0a96;
+    margin-bottom:15px ;
+    letter-spacing: 2px;
+   }*/
+
+   .icons i{
+    display:inline-block ;
+    color: crimson;
+    font-size: 20px;
+    margin:0 8px;
+    transition: all .38s ease;
+   }
+   .icons i:hover{
+    transform: scale(1.2);
+   }
+   .box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+   }
+
+   @media(max-width:1240px){
+      .team{
+        width:100%;
+        height: auto;
+        padding: 90px 2%;
+      }
+   }
+   .center h1{
+    font-size: 3.2rem;
+   }
+   /*Section End*/
+
+
+/*Header Start*/
+    /*pine start*/
+    header {  
+      /* background-image: url(images/bagan.jpg);
+      background-size: cover;
+      position: absolute; */
+      width: 100%;
+      height: 700px;
+      /* overflow: hidden; */
+      
+    }
+
+    .carousel-inner {
+        height: 600px; /* Set height to match the header */
+    }
+
+    .carousel-item {
+        height: 600px; /* Set height to match the header */
+    }
+
+    .carousel-item img {
+        object-fit: cover; /* Ensure images cover the area */
+        height: 100%; /* Full height */
+        width: 100%; /* Full width */
+    }
+
+    .navbar {
+        
+        position: relative; /* Keep the navbar on top of the carousel */
+        width: 100%;
+        z-index: 1; /* Ensure the navbar is above the carousel */
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/wesitedestinobg.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      /* filter: blur(3px);  */
+      z-index: -1; /* Make sure it's behind content */
+    }
+    .logo {
+      border-radius: 50%;
+      margin-top:5px ;
+      margin-left: 30px;
+    }
+   
+    nav ul {
+      margin-left: 7vw;
+      list-style-type: none;
+      margin-left: 200px;
+    }
+    nav li {
+      display: inline-block;
+      list-style-type: none;
+      background-color: #161D6f;
+      color: #fff;
+      padding: 5px 15px 5px 15px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-right: 30px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      color: whitesmoke;
+    }
+    .search-container {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin: 10px;
+      padding: 0;
+      margin-right: 0px;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 150px;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .search-btn:hover .search-icon {
+      color: #007bff;
+    }
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+    
+    
+    .dropdown-item:hover {
+      color: rgb(36, 15, 226);
+
+    }
+    @media (max-width: 768px) {
+      pre {
+        font-size: 25px;
+        text-align: center;
+      }
+      ul {
+        margin-left: 50px;
+      }
+    }
+    /*pine end*/
+   /*Header End*/
+
+
+/* <!--style starter for section card --> */
+   place{
+      width: 100%;
+      height: 700px;
+      display: flex;
+      padding-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      
+      font-family: Arial, sans-serif;
+        }
+        place h1  {
+           margin-top: 3vw;
+            text-align: center;
+            color: rgb(218, 195, 69);;
+        }
+        place h2  {
+          
+            text-align: center;
+            color: yellowgreen;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            overflow: hidden; /* Hide overflowing cards */
+            position: relative; /* For arrow positioning */
+        }
+        .cards-wrapper {
+            display: flex;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+        .card {
+            position: relative;
+            width:260px; /* Width of the cards */
+            height: 400px; /* Height of the cards */
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.6s ease;
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+        }
+        .card:hover{
+            transform: translateY(-20px);
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+            height: auto;
+        }
+        .arrow {
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for exact centering */
+            background-color:rgb(218, 195, 69) ; /* White background for visibility */
+            border: none; /* Border color */
+            
+            z-index: 1; /* Ensure arrows are above cards */
+            box-shadow: 0 4px 10px rgb(8, 8, 8);
+            display: none; /* Hide arrows initially */
+        }
+        .left-arrow {
+            left: 3px; /* Position closer to the first card */
+        }
+        .right-arrow {
+            right: 3px; /* Position closer to the fourth card */
+        }
+        .arrow.visible {
+            display: block; /* Show arrows when needed */
+        }
+
+
+
+      aside{
+        background-image: url(/images/aboutus1.jpg);
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: -1; /* Make sure it's behind content */
+        overflow: hidden;
+        transition: 0.5s;
+      }
+            /* footer */
+
+            footer{
+          background-color: #111;
+          padding-top: 5px;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      .footerContainer{
+          width: 100%;
+          padding: 70px 30px 20px;
+      }
+      .socialIcons{
+          display: flex;
+          justify-content: center;
+      }
+      .socialIcons a{
+          text-decoration: none;
+          padding: 10px;
+          background-color: white;
+          margin: 10px;
+          border-radius: 50%;
+      }
+      .socialIcons a i{
+          font-size: 2em;
+          color: black;
+          opacity: 0.9;
+      }
+
+
+      /*hover effect*/
+      .socialIcons a:hover{
+          background-color: #111;
+          transition: 0.5s;
+      }
+      .socialIcons a:hover i{
+          color: white;
+          transition: 0.5s;
+      }
+      .footerNav{
+          margin: 30px 0;
+      }
+      .footerNav ul{
+          display: flex;
+          justify-content: center;
+          list-style-type: nonedisc;
+      }
+      .footerNav ul li a{
+          color: black;
+          margin: 20px;
+          text-decoration: none;
+          font-size: 1.3em;
+          opacity: 0.7;
+          transition: 0.5s;
+      }
+      .footerNav ul li a:hover{
+          opacity: 1;
+      }
+      .footerBottom{
+          background-color: #000;
+          padding: 20px;
+          text-align: center;
+      }
+      .footerBottom p{
+          color: white;
+      }
+      .designer{
+          opacity: 0.7;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 400;
+          margin: 2px 5px;
+      }
+      @media (max-width: 700px){
+          .footerNav ul{
+              flex-direction: column;
+          }
+          .footerNav ul li{
+              width: 100%;
+              text-align: center;
+              margin: 10px;
+          }
+      }
+
+  </style>
+</head>
+<body>
+  <header>
+    <!--Navigation Bar Start-->
+      <!--Logo-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="/images/destinologo.png" class="logo" alt="Destino" width="100px" height="100px">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><i  style="padding-right: 2px;"></i>Where to go</a>
+            </li>
+       
+  <script>
+        function showMore() {
+          const moreRegions = document.getElementById('moreRegions');
+          const showMoreBtn = document.getElementById('showMoreBtn');
+      
+          // Toggle the visibility of the hidden regions
+          if (moreRegions.style.display === 'none') {
+            moreRegions.style.display = 'block';  // Show the hidden regions
+            showMoreBtn.textContent = 'Show Less...';  // Change button text
+          } else {moreRegions.style.display = 'none';  // Hide the regions again
+        showMoreBtn.textContent = 'Show More...';  // Reset button text
+      }
+    }
+  </script>
+  <!--Events & Festival-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events & Festival</a>
+<!--About Us-->
+<li class="nav-item">
+  <a class="nav-link" href="#">About Us</a>
+</li>
+<!--Search box-->
+<form class="d-flex">
+<div class="search-container">
+  <i class="fa-solid fa-magnifying-glass" style="padding-left: 5px;"></i>
+  <input 
+    type="text"
+    placeholder="Search..."
+    class="search-input"
+  />
+  <button class="search-btn" type="submit">
+  </button>
+</div>
+</form>
+</ul>
+</div>
+</div>
+</nav>
+
+<!--Navigation Bar End-->
+</header>
+
+<place><!--here is the stater for section card-->
+  <h1 id="sectionA">Some Attractive Places</h1>
+  <h2>In Burma</h2>
+  <div class="container" id="cardContainer">
+      <div class="cards-wrapper" id="cardsWrapper">
+          <a href="Kachin.html" class="card">
+              <img src="images/1.avif" alt="Image 1">
+              <div class="caption">Kalaw<br>Shan State</div>
+          </a>
+          <a href="Chinstate.html" class="card">
+              <img src="images/10.avif" alt="Image 2">
+              <div class="caption">Image 2</div>
+          </a>
+          <a href="Kayar.html" class="card">
+              <img src="images/11.avif" alt="Image 3">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Mon.html" class="card">
+              <img src="images/12.avif" alt="Image 4">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          
+          <a href="Rakhine.html" class="card hidden">
+              <img src="images/13.avif" alt="Image 5">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Mandalay.html" class="card hidden">
+              <img src="images/13.avif" alt="Image 6">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Yangon.html" class="card hidden">
+              <img src="images/14.avif" alt="Image 7">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Taninthayi.html" class="card hidden">
+              <img src="images/15.avif" alt="Image 8">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Shan.html" class="card hidden">
+            <img src="images/16.avif" alt="Image 9">
+            <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+        </a>
+        <a href="Mgaway.html" class="card hidden">
+            <img src="images/17.avif" alt="Image 10">
+            <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+        </a>
+
+
+<a href="Chinstate.html" class="card hidden">
+          <img src="images/2.avif" alt="Image 11">
+          <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Kayar.html" class="card hidden">
+              <img src="images/29.jpeg" alt="Image 12">
+              <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+          </a>
+          <a href="Saging.html" class="card hidden">
+            <img src="/images/Saging.jpg" alt="Image 13">
+            <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+        </a>
+        <a href="Chinstate.html" class="card hidden">
+            <img src="/images/heartlake.jpg" alt="Image 14">
+            <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+        </a>
+              
+        <a href="Kayar.html" class="card hidden">
+          <img src="/images/kalaw.jpg" alt="Image 15">
+          <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+      </a>
+
+      <a href="Yangon.html" class="card hidden">
+        <img src="/images/Yangon.jpg" alt="Image 16">
+        <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+    </a>
+    <a href="Rakhine.html" class="card hidden">
+        <img src="images/Rakhine.jpg" alt="Image 17">
+        <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+    </a>
+    <a href="Saging.html" class="card hidden">
+      <img src="/images/Saging.jpg" alt="Image 18">
+      <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+  <a href="Kachin.html" class="card hidden">
+      <img src="/images/putao.jpg" alt="Image 19">
+      <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+  </a>
+
+<a href="Mon.html" class="card hidden">
+    <img src="images/Mon.jpg" alt="Image 20">
+    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+</a>
+<a href="Chinstate.html" class="card hidden">
+  <img src="/images/chin.jpg" alt="Image 21">
+  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+</a>
+<a href="Mandalay.html" class="card hidden">
+  <img src="/images/Madalay.jpg" alt="Image 22">
+  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+</a>
+<a href="Taninthayi.html" class="card hidden">
+  <img src="/images/Taninthayi.jpg" alt="Image 23">
+  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+</a>
+<a href="Saging.html" class="card hidden">
+  <img src="/images/Saging.jpg" alt="Image 24">
+  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+</a>
+          </div>
+   <!-- Arrows for showing more cards -->
+   <div class="arrow left-arrow" id="showMoreLeft">
+      <span class="material-symbols-outlined">arrow_back_ios</span>
+  </div>
+  <div class="arrow right-arrow" id="showMoreRight">
+      <span class="material-symbols-outlined">arrow_forward_ios</span>
+  </div>
+</div>
+
+      <!-- Arrows for showing more cards -->
+      <div class="arrow left-arrow" id="showMoreLeft">
+          <span class="material-symbols-outlined">arrow_back_ios</span>
+      </div>
+      <div class="arrow right-arrow" id="showMoreRight">
+          <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </div>
+  </div>
+
+  <script>
+      const cardsWrapper = document.getElementById('cardsWrapper');
+      const showMoreLeft = document.getElementById('showMoreLeft');
+      const showMoreRight = document.getElementById('showMoreRight');
+      const totalCards = document.querySelectorAll('.card').length;
+      const visibleCards = 4; // Number of cards to show at once
+      let currentIndex = 0;
+
+      function updateCardPosition() {
+          const offset = currentIndex * (130 + 20); // Card width + margin
+          cardsWrapper.style.transform = `translateX(-${offset}px)`;
+
+          // Show or hide arrows based on the current index
+          showMoreLeft.classList.toggle('visible', currentIndex > 0);
+          showMoreRight.classList.toggle('visible', currentIndex < totalCards - visibleCards);
+      }
+
+      showMoreRight.addEventListener('click', () => {
+          currentIndex++;
+          if (currentIndex >= totalCards - visibleCards + 1) {
+              currentIndex = totalCards - visibleCards; // Stop at the last visible card
+          }
+          updateCardPosition();
+      });
+
+      showMoreLeft.addEventListener('click', () => {
+          currentIndex--;
+          if (currentIndex < 0) {
+              currentIndex = 0; // Stay at the start
+          }
+          updateCardPosition();
+      });
+
+      // Initialize visibility on page load
+      updateCardPosition();
+  </script>
+</place>
+
+
+<section class="team">
+    <div class="center">
+      <h1>Our Team</h1>
+    </div>
+    <div class="team-content">
+      <div class="box">
+        <img src="/images/ZLHtoo.jpg" alt="team">
+        <h3>ZLHtoo</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/spider.jpg" alt="team">
+        <h3>Spider</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="/images/Pine.jpg" alt="team">
+        <h3>Apple</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/Sil.jpg" alt="team">
+        <h3>Silvermist</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/Moon.jpg" alt="team">
+        <h3>Moon</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+
+      <div class="box">
+        <img src="/images/Tinkerbell.jpg" alt="team">
+        <h3>Tinkerbell</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+     <div class="box">
+        <img src="/images/Revy (2).jpg" alt="team">
+        <h3>Revy</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/kuu.jpg" alt="team">
+        <h3>Kuu</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/Whitney.jpg" alt="team">
+        <h3>Whitney</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/Jm.jpg" alt="team">
+        <h3>JM</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="/images/Nico.jpg" alt="team">
+        <h3>Nico</h3>
+        <div class="icons">
+          <a href="#"><i class="ri-heart-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <aside>
+  <h1 style="margin-left: 8vw;  margin-top: 9vw;color:white ;font-size: 45px;">Haven't decided yet?<br>Let us inspire you even more. </h1>
+ </aside>
+
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="about us.html">Our Team</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="footerBottom">
+         <p>Copyright &copy;2024;Designed by <span class="designer">Cheerful Chums</span></p>
+    </div>
+    </footer>
+
+</body>
+</html>
