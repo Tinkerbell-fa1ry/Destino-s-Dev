@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino-visit to Burma</title>
+    <link rel="icon" type="image/x-icon" href="images/Screenshot 2024-09-13 142916.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet"> <!-- Material Symbols Outlined -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="icon" href="/C++/Web Application Development/pj-logo.jpg" type="image.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+    header {
+      position: relative;
+      width: 100%;
+      height: 700px;
+
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/Hpa-an-Myanmar.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      filter: blur(3px); /* Apply blur to background */
+      z-index: -1; /* Make sure it's behind content */
+    }
+  
+    .logo {
+      border-radius: 50%;
+      margin-top:5px ;
+      margin-left: 30px;
+    }
+   
+    nav ul {
+      list-style-type: none;
+      margin-left: 300px;
+      margin-left: 7vw;
+    }
+    nav li {
+      display: inline-block;
+      list-style-type: none;
+      background-color: #161D6f;
+      color: white;
+      padding: 5px 15px 5px 15px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-right: 30px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      color: whitesmoke;
+    }
+    .navbar{
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+    .search-container {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin: 10px;
+      padding: 0;
+      margin-left: 0;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 150px;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .search-btn:hover .search-icon {
+      color: #007bff;
+    }
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+    
+    
+    .dropdown-item:hover {
+      color: rgb(36, 15, 226);
+
+    }
+pre {
+        color:whitesmoke;
+        font-size: 35px;
+        margin-top: 10vw;
+        margin-left: 0;
+        padding-left: 0;
+        font-family: "Jacques Francois Shadow", serif;
+        font-weight: 400;
+        font-style: normal;
+        display: inline-block;
+    }
+  
+
+
+      /* <!--style starter for section card --> */
+      place{
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      font-family: Arial, sans-serif;
+        }
+        place h1  {
+           margin-top: 3vw;
+            text-align: center;
+            color:#D27C2C ;
+        }
+        place h2  {
+          
+            text-align: center;
+            color:#D27C2C ;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            overflow: hidden; /* Hide overflowing cards */
+            position: relative; /* For arrow positioning */
+        }
+        .cards-wrapper {
+            display: flex;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+        .card {
+            position: relative;
+            width:260px; /* Width of the cards */
+            height: 400px; /* Height of the cards */
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.6s ease;
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+        }
+        .card:hover{
+            transform: translateY(-20px);
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+            height: auto;
+        }
+        .arrow {
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for exact centering */
+            background-color: white; /* White background for visibility */
+            border: 2px solid black; /* Border color */
+            border-radius: 50%; /* Round button */
+            padding: 5px;
+            z-index: 1; /* Ensure arrows are above cards */
+            box-shadow: 0 4px 10px white;
+            display: none; /* Hide arrows initially */
+        }
+        .left-arrow {
+            left: 1px; /* Position closer to the first card */
+        }
+        .right-arrow {
+            right: 1px; /* Position closer to the fourth card */
+        }
+        .arrow.visible {
+            display: block; /* Show arrows when needed */
+        }
+
+
+section{
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 5vw; */
+    font-family: Arial, sans-serif;
+    background-image: url(/images/kayintext4bg.jpg);
+    /* background-image: url("/images/image 1.jpg");
+    background-size: auto; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1; 
+    overflow: hidden;
+    transition: 0.5s;
+    color: #D27C2C;
+    font-weight: 1000;
+}
+section h1{
+    margin-left: 15vw;
+    color: #D27C2C;
+    font-size: 35px;
+    margin-top: 5vw;
+}
+/* section h2{
+    margin-left: 15vw;
+    color:#D27C2C ;
+    font-size: 25px;
+    font-family: "Jacques Francois Shadow", serif;
+    margin-top: 5vw;
+    font-family: Arial, sans-serif;
+   
+} */
+section p{
+    margin-top: 5vw;
+    margin-left: 25vw;
+    text-align:justify;
+    text-justify: inter-word;
+    text-indent: 25px;
+    color: white;
+    margin-right: 25vw;
+    font-size: 17px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+
+}
+section img{
+    margin-left: 20vw;
+    margin-top: 3vw;
+}
+ 
+/* figure{
+ 
+  background-image: url(images/165433947700.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1; 
+  overflow: hidden;
+  transition: 0.5s;
+  color: #D27C2C;
+  font-weight: 1000;
+}  */
+
+
+/* aside{
+  margin-top: 5vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden; 
+}  
+.cardwwtg{
+  width: 325px;
+  height: 380px;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  box-shadow: 0px 2px 4px rgba(0,0,0, 0.3);
+  overflow: hidden;
+  float: left;
+  transition: transform 0.6s ease; 
+  margin-left: 2vw;
+ }
+.cardwwtg:hover{
+  transform: translateY(-20px);
+ } 
+ .cardwwtg img{
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  overflow: hidden;
+ } 
+ .card-content{
+  padding: 10px;
+ }
+ .card-content h1{
+  font-size: 24px;
+ }
+ .card-content p{
+  font-size: 13px;
+  color: black;
+  margin-bottom: 20px;
+ }
+ .button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  align-items: center; 
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 3vw;
+  overflow: hidden;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+} */
+
+summary{
+  margin-top: 3vw;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 10px;
+}
+summary img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .grid-wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 150px; /* Default row height */
+            grid-auto-flow: dense;
+        }
+        .grid-wrapper > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-wrapper > div > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        /* Different heights for specific classes */
+        .grid-wrapper .tall {
+            grid-row: span 2; /* Makes the image twice the height */
+        }
+        .grid-wrapper .short {
+            grid-row: span 1; /* Default height */
+        }
+        .grid-wrapper .wide {
+            grid-column: span 2; /* Makes the image twice the width */
+        }
+        .grid-wrapper .big {
+            grid-column: span 2;
+            grid-row: span 2; /* Big image taking up more space */
+        }
+
+        picture{ 
+        height:30vw;
+        width:100% ;
+        text-align: center;  
+        float: left;  
+        margin-top: 6vw;
+
+    }
+
+</style>
+<body>
+  <header>
+    <!--Navigation Bar-->
+     <!--Logo-->
+     
+     </ul><nav class="navbar navbar-expand-lg navbar-light">
+       <img src="/images/destinologo.png" class="logo" alt="Destino" width="100px" height="100px">
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link" href="/index.html/destinohompage.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#sectionA" style="padding-right: 1px;"></i>Where to go</a>
+             </li>
+       
+ <script>
+       function showMore() {
+         const moreRegions = document.getElementById('moreRegions');
+         const showMoreBtn = document.getElementById('showMoreBtn');
+     
+         // Toggle the visibility of the hidden regions
+         if (moreRegions.style.display === 'none') {
+           moreRegions.style.display = 'block';  // Show the hidden regions
+           showMoreBtn.textContent = 'Show Less...';  // Change button text
+         } else {moreRegions.style.display = 'none';  // Hide the regions again
+       showMoreBtn.textContent = 'Show More...';  // Reset button text
+     }
+   }
+ </script>
+   
+     <!--Events & Festival-->
+       <li class="nav-item">
+         <a class="nav-link" href="eventandfestival.html">Events & Festival</a>
+       </li>
+       <!--About Us-->
+       <li class="nav-item">
+         <a class="nav-link" href="aboutus.html">About Us</a>
+       </li>
+ <!--Search box-->
+     <form class="d-flex">
+       <div class="search-container">
+         <i class="fa-solid fa-magnifying-glass" style="padding-left: 5px;"></i>
+         <input 
+           type="text"
+           placeholder="Search..."
+           class="search-input"
+         />
+         <button class="search-btn" type="submit">
+         </button>
+       </div>
+     </form>
+     </div>
+     </div>
+     </nav>
+   <!--Navigation Bar End-->
+        
+       
+        <!--Home page texts-->
+        <pre>
+          WELCOME TO  DESTINO 
+             TRAVEL OVER                 
+                AROUND BURMA      
+                
+        </pre>
+      </header>
+
+
+      <place><!--here is the stater for section card-->
+        <h1 id="sectionA"> Explore the Diversity of States and Regions</h1>
+        <h2>In Burma</h2>
+        <div class="container" id="cardContainer">
+            <div class="cards-wrapper" id="cardsWrapper">
+                <a href="" class="card">
+                    <img src="" alt="Image 1">
+                    <div class="caption">Kalaw<br>Shan State</div>
+                </a>
+                <a href="" class="card">
+                    <img src="" alt="Image 2">
+                    <div class="caption">Image 2</div>
+                </a>
+                <a href="" class="card">
+                    <img src="" alt="Image 3">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="" class="card">
+                    <img src="" alt="Image 4">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                
+                <a href="" class="card hidden">
+                    <img src="" alt="Image 5">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="" class="card hidden">
+                    <img src="" alt="Image 6">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="" class="card hidden">
+                    <img src="" alt="Image 7">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="" class="card hidden">
+                    <img src="" alt="Image 8">
+                    <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+                </a>
+                <a href="" class="card hidden">
+                  <img src="" alt="Image 9">
+                  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+              </a>
+              <a href="" class="card hidden">
+                  <img src="" alt="Image 10">
+                  <div class="caption">Hpa-An<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae non, odit et recusandae quam nihil est numquam natus labore.</div>
+              </a>
+    
+              <a href="" class="card hidden">
+                <img src="/images/Kachin img.jpg" alt="Image 11">
+                <div class="caption">Kachin State <br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Kachin State is the northernmost state of Myanmar. It is bordered by China to the north and east, Shan State to the south, and Sagaing Region and India to the west.</div>
+                </a>
+                <a href="" class="card hidden">
+                    <img src="/images/kayah_img.jpg" alt="Image 12">
+                    <div class="caption">Kayah state<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Kayah State, or Karenni State, is a state of Myanmar. Situated in eastern Myanmar, it is bounded on the north by Shan State, on the east by Thailand's Mae Hong Son Province.</div>
+                </a>
+                <a href="/index.html/Kayin.html" class="card hidden">
+                  <img src="/images/kayin_img.jpg" alt="Image 13">
+                  <div class="caption">Kayin State<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Kayin State, formerly known as Karen State, is a state of Myanmar. The capital city is Hpa-An, also spelled Pa-An.</div>
+              </a>
+              <a href="Chinmain.html" class="card hidden">
+                  <img src="/images/chin_img.jpg" alt="Image 14">
+                  <div class="caption">Chin State<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;;">Located at the western side of Myanmar with Hakha as its capital, the Chin State/Chin Hills stands tall at 3,053 metres, attracting mountaineers and hikers to visit Chin.</div>
+              </a>
+                    
+              <a href="Monmain.html" class="card hidden">
+                <img src="/images/Mon_img.jpg" alt="Image 15">
+                <div class="caption">Mon State<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Mon State is an administrative division of Myanmar. It lies between Kayin State to the east, the Andaman Sea to the west, Bago Region to the north and Tanintharyi Region to the south</div>
+            </a>
+      
+            <a href="" class="card hidden">
+              <img src="/images/rakhine_img.jpg" alt="Image 16">
+              <div class="caption">Rakhine State<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Rakhine State, formerly known as Arakan State, is a state in Myanmar. Situated on the western coast, it is bordered by Chin State to the north, Magway Region, Bago Region.</div>
+          </a>
+          <a href="" class="card hidden">
+              <img src="/images/shan_img.jpg" alt="Image 17">
+              <div class="caption">Shan State<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Shan State is a state of Myanmar. Shan State borders China to the north, Laos to the east, and Thailand to the south, and five administrative divisions of Myanmar in the west. </div>
+          </a>
+          <a href="" class="card hidden">
+            <img src="/images/magway_img.jpg" alt="Image 18">
+            <div class="caption">Magway Region <br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Magway Region is an administrative division in central Myanmar. It is the second largest of Myanmar's seven divisions, with an area of 44,820 km².</div>
+        </a>
+        <a href="" class="card hidden">
+            <img src="/images/mandalay_img.webp" alt="Image 19">
+            <div class="caption">Mandalay Region<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Mandalay is a city and former royal capital in northern Myanmar (formerly Burma) on the Irrawaddy River.</div>
+        </a>
+      
+        <a href="" class="card hidden">
+          <img src="/images/yangon_img.jpg" alt="Image 20">
+          <div class="caption">Yangon Region<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Yangon is the largest city in Myanmar.A mix of British colonial architecture, modern high-rises and gilded Buddhist pagodas define its skyline.</div>
+      </a>
+      <a href="" class="card hidden">
+        <img src="/images/sagaing_img.jpg" alt="Image 21">
+        <div class="caption">Sagaing Region <br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Sagaing is the former capital of the Sagaing Region of Myanmar. It is located on the Irrawaddy River, 20 km to the south-west of Mandalay on the opposite bank of the river. </div>
+      </a>
+      <a href="" class="card hidden">
+        <img src="/images/Tanintharyi _img.jpg" alt="Image 22">
+        <div class="caption">Tanintharyi Region<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Tanintharyi Region is a region of Myanmar, covering the long narrow southern part of the country on the northern Malay Peninsula, reaching to the Kra Isthmus.</div>
+      </a>
+      <a href="" class="card hidden">
+        <img src="/images/ayeyarwady.jpg" alt="Image 23">
+        <div class="caption">Ayeyawady Region<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Ayeyawady Region is a region of Myanmar, occupying the delta region of the Ayeyarwady River.</div>
+      </a>
+      <a href="" class="card hidden">
+        <img src="/images/Bago_img.jpg" alt="Image 24">
+        <div class="caption">Bago Region<br style="line-height: 2vw;text-align: justify;text-justify: inter-word;text-indent: 25px;">Bago Region is an administrative region of Myanmar, located in the southern central part of the country.</div>
+      </a>
+                </div>
+         <!-- Arrows for showing more cards -->
+         <div class="arrow left-arrow" id="showMoreLeft">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+        </div>
+        <div class="arrow right-arrow" id="showMoreRight">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+    </div>
+    
+            <!-- Arrows for showing more cards -->
+            <div class="arrow left-arrow" id="showMoreLeft">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+            </div>
+            <div class="arrow right-arrow" id="showMoreRight">
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </div>
+        </div>
+    
+        <script>
+          const cardsWrapper = document.getElementById('cardsWrapper');
+          const showMoreLeft = document.getElementById('showMoreLeft');
+          const showMoreRight = document.getElementById('showMoreRight');
+          const totalCards = document.querySelectorAll('.card').length;
+          const visibleCards = 4; // Number of cards to show at once
+          const moveCount = 3; // Number of cards to move per click
+          const cardWidth = 130; // Card width
+          const cardMargin = 20; // Margin between cards
+          let currentIndex = 0; // Starting index (first card)
+    
+           /**
+          * Update the card position based on the currentIndex
+          */
+          function updateCardPosition() {
+          const offset = currentIndex * (cardWidth + cardMargin); // Total width moved
+          cardsWrapper.style.transform = `translateX(-${offset}px)`;
+    
+          // Show or hide arrows based on the current index
+          showMoreLeft.classList.toggle('visible', currentIndex > 0);
+          showMoreRight.classList.toggle('visible', currentIndex < totalCards - visibleCards);
+          }
+    
+          
+          showMoreRight.addEventListener('click', () => {
+          currentIndex += moveCount; // Move by 3 cards
+          if (currentIndex > totalCards - visibleCards) {
+          currentIndex = totalCards - visibleCards; // Prevent overshooting
+      }
+      updateCardPosition();
+      });
+      showMoreLeft.addEventListener('click', () => {
+      currentIndex -= moveCount; // Move by 3 cards
+      if (currentIndex < 0) {
+      currentIndex = 0; // Stay at the start
+      }
+      updateCardPosition();
+      });
+    // Initialize visibility and position on page load
+    updateCardPosition();
+    </script>
+      </place>
+
+    <section>
+        
+        <h1 style=" margin-left: 15vw; color: #D27C2C;font-size: 35px;font-family: Jacques Francois Shadow, serif;margin-top: 5vw;">Mount Mulayit</h1>
+        <p style="text-align: justify;text-justify: inter-word;">Mount Mulayit, also known as Muleh Yit, is a mountain of the Dawna Range. It is located towards the southern end of the range in Kayin State, Burma, 12 km to the NNW of the border with Thailand.It is almost 2,100 meters above sea level. There are two pagodas located there, and men can climb up to pay respects to both of them. Women are allowed to only visit the pagoda that is 30 meters above sea level.</p>
+        <!-- <img src="images/rih.jpg" alt="no image" width="60%" height="480px"style>  -->
+        <!-- <h2>Where Rih lake is situated</h2> -->
+        <p style="text-align: justify;text-justify: inter-word;; margin-top: 5vw; margin-left: 15vw; color: #D27C2C;font-size: 35px;font-family: Jacques Francois Shadow, serif;">Where Mount Mulayit is situated</p>
+        <p style="text-align: justify;text-justify: inter-word;">Mulayit Wildlife Sanctuary is a protected area in Myanmar's Kayin State, covering 138.56 km2 (53.50 sq mi).It ranges in elevation from 80 to 2,010 m (260 to 6,590 ft) and encompasses grassland, evergreen forest and mixed deciduous forest in Kyain Seikgyi Township. It was gazetted in 1936.It is located on the western slopes of the Dawna Range and was established with the support of Buddhist monks.</p>
+        </section>
+      <!-- <figure></figure>   -->
+        
+<!-- <figure>
+  <h1 style="margin-left: 8vw;  margin-top: 19vw;">Choose from luxury hotels to cozy hostels. </h1>
+  <h2 style="margin-left: 8vw; font-family: Roboto Slab, serif;">Book your perfect retreat with ease</h2>
+</figure>
+
+        <aside>
+            <div class="cardwwtg">
+                <img src="images/imagestwo.jpg" alt="no image">
+                <div class="card-content">
+                  <h1>Title Two</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias consectetur, amet totam dolorem beatae illum!</p>
+                  <div><a href=""><button class=" button5">Learn More</button></a></div>
+                </div>
+                </div>
+    
+                <div class="cardwwtg">
+                    <img src="images/imagestwo.jpg" alt="no image">
+                    <div class="card-content">
+                      <h1>Title Two</h1>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias consectetur, amet totam dolorem beatae illum!</p>
+                      <div><a href=""><button class="button5">Learn More</button></a></div>
+                    </div>
+                    </div>
+    
+                    <div class="cardwwtg">
+                        <img src="images/image three.jpg" alt="no image">
+                        <div class="card-content">
+                          <h1>Title Two</h1>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias consectetur, amet totam dolorem beatae illum !</p>
+                          <div><a href=""><button class="button5">Learn More</button></a></div>
+                        </div>
+                        </div>
+    
+                        <div class="cardwwtg">
+                            <img src="images/imagesone.jpg" alt="no image">
+                            <div class="card-content">
+                              <h1>Title Two</h1>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias consectetur, amet totam dolorem beatae illum!</p>
+                              <div><a href=""><button class=" button5">Learn More</button></a></div>
+                            </div>
+                            </div>
+        </aside>  -->
+
+
+        <summary>
+          <div class="grid-wrapper">
+            <div class="tall"><img src="/images/download.jpg" alt="Description of image 1" loading="lazy"></div>
+            <div class="short"><img src="/images/kayin_img.jpg" alt="Description of image 2" loading="lazy"></div>
+            <div><img src="/images/Lumbine_buddha_Garden_2.jpg" alt="Description of image 3" loading="lazy"></div>
+            <div class="wide"><img src="/images/Kawgun_Cave_6.jpg" alt="Description of image 4" loading="lazy"></div>
+            <div><img src="/images/Sadanbackground.jpg" alt="Description of image 5" loading="lazy"></div>
+            <div class="tall"><img src="/images/Sadancave.jpg" alt="Description of image 6" loading="lazy"></div>
+            <div><img src="/images/backgroundzkb.jpg" alt="Description of image 7" loading="lazy"></div>
+            <div><img src="/images/cave.webp" alt="Description of image 8" loading="lazy"></div>
+            <div class="big"><img src="/images/bayin_nyi_cave.jpg" alt="Description of image 9" loading="lazy"></div>
+            <div><img src="/images/hpa an.jpg" alt="Description of image 10" loading="lazy"></div>
+            <div><img src="/images/Traditonal dress.jpg" alt="Description of image 11" loading="lazy"></div>
+            <div><img src="/images/62de641ce3132f11b4314f10_marvellous fb.jpg" alt="Description of image 12" loading="lazy"></div>
+            <div class="tall"><img src="/images/1DSC05762.jpg" alt="Description of image 13" loading="lazy"></div>
+            <div><img src="/images/vue-panoramique-Kaw-Goon-Cave-Hpa-An-Myanmar.jpg" loading="lazy"></div>
+            <div><img src="/images/640px-Hpa_An_03.jpg" alt="Description of image 15" loading="lazy"></div>
+            <div><img src="/images/bikers-in-front-of-hpa.jpg" alt="Description of image 14" loading="lazy"></div>
+            <div><img src="/images/our-private-hideout.jpg" alt="Description of image 15" loading="lazy"></div>
+            <div><img src="/images/Kayindoneyain.jpg" alt="Description of image 15" loading="lazy"></div> 
+        </div>
+        </summary>
+                
+        <picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30653.76157865518!2d98.50690027568282!3d16.183373274313333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e779d3d403e579%3A0xec83f26b20d9fda9!2sMulayit%20Taung!5e0!3m2!1sen!2smm!4v1729489984314!5m2!1sen!2smm" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </picture>
+</body>
+</html>
